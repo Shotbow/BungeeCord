@@ -70,7 +70,21 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <shotbow.repo>http://localhost:9080/nexus/content/groups/shotbow/</shotbow.repo>
+        <shotbow.repo.snapshot>http://localhost:9080/nexus/content/repositories/shotbow-public/</shotbow.repo.snapshot>
+        <shotbow.repo.release>http://localhost:9080/nexus/content/repositories/shotbow-public/</shotbow.repo.release>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>shotbow-release-repo</id>
+            <url>${shotbow.repo.release}</url>
+        </repository>
+        <snapshotRepository>
+            <id>shotbow-snapshot-repo</id>
+            <url>${shotbow.repo.snapshot}</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>

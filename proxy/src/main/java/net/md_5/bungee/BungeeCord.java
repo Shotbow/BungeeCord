@@ -99,6 +99,12 @@ public class BungeeCord extends ProxyServer
      * Current operation state.
      */
     public volatile boolean isRunning;
+
+    @Override
+    public boolean isRunning() {
+        return isRunning;
+    }
+
     /**
      * Configuration.
      */

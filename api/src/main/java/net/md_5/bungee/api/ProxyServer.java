@@ -304,4 +304,9 @@ public abstract class ProxyServer
      */
     public abstract Title createTitle();
 
+    public abstract void stopListeners();
+    public abstract void startListeners();
+
+    public abstract boolean isRunning();
+
 }

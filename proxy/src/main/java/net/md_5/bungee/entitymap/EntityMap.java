@@ -42,6 +42,7 @@ public abstract class EntityMap
             case ProtocolConstants.MINECRAFT_1_11:
             case ProtocolConstants.MINECRAFT_1_11_1:
                 return EntityMap_1_11.INSTANCE;
+            case ProtocolConstants.MINECRAFT_1_12_PRE:
             case ProtocolConstants.MINECRAFT_1_12:
                 return EntityMap_1_12.INSTANCE;
         }
